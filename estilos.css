@@ -1,0 +1,85 @@
+body {
+ margin: 0;
+ background: #ddd;
+}
+
+.contenedor {
+ diplay: flex;
+ justify-content: center;
+}
+
+.caja {
+ margin: 150px 15px;
+ width: 150px;
+ height: 150px;
+ background: crimson;
+ color: #fff;
+ font-size: 40px;
+ text-align: center;
+ line-height: 150px;
+ transition: all 2s;}
+}
+.oval {
+     width: 250px;
+     height: 100px;
+     -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+     background: #5cb85c;
+}
+.trapecio {
+    margin: 150px 15px;
+    width: 250px;
+    height: 0px;
+    border-right: 60px solid transparent;
+    border-left: 60px solid transparent;
+    border-top: 100px solid #000080;
+    transition: all 1s;
+}
+.triangulo {
+     width: 0; 
+     height: 0; 
+     border-left: 100px solid #f0ad4e;
+     border-top: 50px solid transparent;
+     border-bottom: 50px solid transparent; 
+     transition: all 1s;
+
+}
+
+.caja:nth-child(1): {
+background: red;
+transform: TranslateX(100px)
+}
+
+.caja:nth-child(1):hover {
+background: red;
+transform: TranslateX(100px)
+
+}
+
+
+.oval:nth-child(2):{
+background: purple;
+transform: RotateY(210deg)
+}
+
+.oval:nth-child(2):hover {
+background: purple;
+transform: RotateY(210deg)
+}
+
+.trapecio:nth-child(3):{
+transform: Scale(2,5)
+}
+
+.trapecio :nth-child(3):hover {
+transform: Scale(2,5)
+}
+
+.triangulo:nth-child(4):{
+transform: Skew(25deg, 50deg)
+}
+
+.triangulo:nth-child(4):hover {
+transform: Skew(25deg, 50deg)
+}
